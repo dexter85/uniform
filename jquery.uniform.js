@@ -834,6 +834,10 @@ Enjoy!
                             var selHtml = $el.find(":selected").html();
 
                             if ($span.html() !== selHtml) {
+                                
+                            	//Change Interface value 
+                            	$span.html(selHtml);                                
+                                
                                 // Change was detected
                                 // Fire the change event on the select tag
                                 $el.trigger('change');
